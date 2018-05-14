@@ -13,11 +13,23 @@ let answer = ''
 for (i=0; i<keys.length; i++) {
 
     keys[i].addEventListener('click', function (event) {
-        let  buttonClicked = event.target;
-        // console.log(buttonClicked.innerHTML)
+        let  btnClk = event.target;
+        console.log(btnClk.innerHTML)
+
+        document.getElementById("answer-box").innerHTML = btnClk.innerHTML;
         
+        // This returns undefined
         // let btnClk = document.getElementsByClassName("keys").textContent;
         // document.getElementById("answer-box").innerHTML = btnClk;
+
+        // As of right now only clearBtn works but if I switch 
+        // numClk7 to the bottom only that one will work.
+        
+        // let numClk7 = document.getElementById("seven").textContent;
+        // document.getElementById("answer-box").innerHTML = numClk7;
+
+        // let numClk8 = document.getElementById("eight").textContent;
+        // document.getElementById("answer-box").innerHTML = numClk8;
 
         let clearBtn = document.getElementById("answer-box").innerHTML = "";
         document.getElementById("clear") = clearBtn;
