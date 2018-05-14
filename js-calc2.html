@@ -10,19 +10,27 @@
 <body>
 
 <div class="container">
-      <form name = "calculator">
+      <form name = "calc">
         <table class="table">
           <thead>
             <tr>
               <td id="clear" class="col-one keys">C</td>
-              <td id="answer-box" colspan="3">answer box</td>
+              <td id="answer-box" colspan="3">
+                <input type="text" name="display">
+              </td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td id="seven" class="col-one keys"><input type="button" value="7"></td>
-              <td id="eight" class="keys"><input type="button" value="8"></td>
-              <td id="nine" class="keys"><input type="button" value="9"></td>
+              <td id="seven" class="col-one keys">
+                <input type="button" value="7" onclick="calc.input.value += '7'">
+              </td>
+              <td id="eight" class="keys">
+                <input type="button" value="8" onclick="calc.input.value += '8'">
+              </td>
+              <td id="nine" class="keys">
+                <input type="button" value="9" onclick="calc.display.value += '9'">
+              </td>
               <td id="divide" class="operations keys">/</td>
             </tr>
             <tr>
@@ -35,12 +43,15 @@
               <td class="col-one keys">1</td>
                 <td class="keys">2</td>
                 <td class="keys">3</td>
-                <td class="operations keys">+</td>
+                <td class="operations keys">
+                  <input type="button" value="+" onclick="calc.input.value += '+'">
+                </td>
             </tr>
             <tr>
               <td class="col-one keys">0</td>
               <td class="keys">.</td>
-              <td class="keys">=</td>
+              <td class="keys">
+                <input type="button" value="=" onclick="calc.input.value = eval(cacl.display.value)"></td>
               <td class="operations keys">-</td>
             </tr>
             </tbody>

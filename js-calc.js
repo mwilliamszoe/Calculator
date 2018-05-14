@@ -7,17 +7,20 @@
 let keys = document.querySelectorAll('.keys')
 let answerBox = document.querySelector('#answer-box')
 let input = []
-let answer = ''
+// let answer = ''
 
 
 for (i=0; i<keys.length; i++) {
 
     keys[i].addEventListener('click', function (event) {
         let  btnClk = event.target;
-        console.log(btnClk.innerHTML)
-        let userInputs = document.getElementById("answer-box").innerHTML = btnClk.innerHTML;
-
+        // console.log(btnClk.innerHTML);
+        let firstNum = document.getElementById("answer-box").innerHTML = btnClk.innerHTML;
+        let input = [firstNum];
+        console.log(input);
+            
         
+
 
         // When clicked again new userInputs 
         // shows up next to old one. Need at least three in a row
