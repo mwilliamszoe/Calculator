@@ -15,8 +15,14 @@ for (i=0; i<keys.length; i++) {
     keys[i].addEventListener('click', function (event) {
         let  btnClk = event.target;
         console.log(btnClk.innerHTML)
+        let userInputs = document.getElementById("answer-box").innerHTML = btnClk.innerHTML;
 
-        document.getElementById("answer-box").innerHTML = btnClk.innerHTML;
+        
+
+        // When clicked again new userInputs 
+        // shows up next to old one. Need at least three in a row
+
+
         
         // This returns undefined
         // let btnClk = document.getElementsByClassName("keys").textContent;
@@ -31,14 +37,10 @@ for (i=0; i<keys.length; i++) {
         // let numClk8 = document.getElementById("eight").textContent;
         // document.getElementById("answer-box").innerHTML = numClk8;
 
-        let clearBtn = document.getElementById("answer-box").innerHTML = "";
-        document.getElementById("clear") = clearBtn;
+        // let clearBtn = document.getElementById("answer-box").innerHTML = "";
+        // document.getElementById("clear") = clearBtn;
 
-         
     } )
-
-
-
   
 }
 
