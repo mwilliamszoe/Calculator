@@ -2,17 +2,37 @@
 // eventlistner
 // document.getElementById("answer").addEventListener("click", myFunction);
                 
-// function myFunction() {
-//     document.getElementById("answer").innerHTML = "YOU CLICKED ME!";
-// }
 
-// onclick
-// document.getElementById("answer").onclick = function() {myFunction()};
 
-// function myFunction() {
-//     document.getElementById("answer").innerHTML = "YOU CLICKED ME!";
-// }
+let keys = document.querySelectorAll('.keys')
+let answerBox = document.querySelector('#answer-box')
+let input = []
+let answer = ''
 
- function operators() {
-    document.getElementById("divide").innerHTML = "divide";
+
+for (i=0; i<keys.length; i++) {
+
+    keys[i].addEventListener('click', function (event) {
+        let  buttonClicked = event.target;
+        // console.log(buttonClicked.innerHTML)
+        
+        // let btnClk = document.getElementsByClassName("keys").textContent;
+        // document.getElementById("answer-box").innerHTML = btnClk;
+
+        let clearBtn = document.getElementById("answer-box").innerHTML = "";
+        document.getElementById("clear") = clearBtn;
+
+         
+    } )
+
+
+
+  
 }
+
+// .join for arrays
+// eval() method to evaluate operations
+// parseInt()
+//  with if statements - start with operators first
+// use else statements for numbers
+// .textContent
