@@ -6,7 +6,7 @@
 
 let keys = document.querySelectorAll('.keys')
 let answerBox = document.querySelector('#answer-box')
-let input = []
+// let input = []
 // let answer = ''
 
 
@@ -15,11 +15,16 @@ for (i=0; i<keys.length; i++) {
     keys[i].addEventListener('click', function (event) {
         let  btnClk = event.target;
         // console.log(btnClk.innerHTML);
-        let firstNum = document.getElementById("answer-box").innerHTML = btnClk.innerHTML;
-        let input = [firstNum];
+        let numb = document.getElementById("answer-box").innerHTML = btnClk.innerHTML;
+        let input = [numb, "test1"];
         console.log(input);
-            
-        
+        // input.push(push the "second" click into the array)
+        //           (push "every" "new" click into the array)
+        let numbTwo = document.getElementById("answer-box").innerHTML = btnClk.innerHTML;
+        let inputTwo = [NumbTwo, "test2"]
+        console.log(inputTwo);
+        // let inputOps = input.push("test2")
+        // console.log(inputOps)
 
 
         // When clicked again new userInputs 
