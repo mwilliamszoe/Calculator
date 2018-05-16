@@ -3,7 +3,7 @@
 let keys = document.querySelectorAll('.keys')
 let answerBox = document.querySelector('#answer-box')
 let input = []
-// let answer = ''
+let answer = 'this a test'
 
 
 for (i=0; i<keys.length; i++) {
@@ -13,32 +13,23 @@ for (i=0; i<keys.length; i++) {
         // console.log(btnClk.innerHTML);
 
         const keyInner = btnClk.innerHTML;
+        
             if ( keyInner === "C") {
                 return input = [];
-                // console.log(input)
-                // console.log("test C")
-            } else {
-                // const keyNumbers = parseInt(keyInner)
-                // input.push(keyNumbers)
-                input.push(keyInner)
-                let inputJoined = input.join('')
-                console.log(inputJoined);
-                // console.log(input)
-                answerBox.textContent = keyInner;
-                // answerBox.textContent = keyNumbers;
-                // console.log(answerBox)
-                
-                
+                    // console.log(input)
+                    // console.log("test C")
             }
+            
+            else{
+                const keyNumbers = parseInt(keyInner)
+                input.push(keyNumbers)
+                console.log(input)
+                answerBox.textContent = keyNumbers;
+                console.log(answerBox)
+        }
+
     } )
 }
-
-
-// if (keyInner === "+" 
-//     (keyInner === "-"
-//     (keyInner === "/"
-//     (keyInner === "x"
-//     {
 
 
 
@@ -48,8 +39,4 @@ for (i=0; i<keys.length; i++) {
 //  with if statements - start with operators first
 // use else statements for numbers
 // .textContent
-
-// get rid of commas with join
-// find a way to turn make parseInt ignore operators
-// eval entire statement with = sign
  
