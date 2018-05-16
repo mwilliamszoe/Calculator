@@ -19,13 +19,21 @@ for (i=0; i<keys.length; i++) {
                     // console.log(input)
                     // console.log("test C")
             }
+
+            if (keyInner === "=") {
+                let equation = input.join('')
+                console.log(equation)
+            }
             
             else{
-                const keyNumbers = parseInt(keyInner)
-                input.push(keyNumbers)
+                // const keyNumbers = parseInt(keyInner)
+                // input.push(keyNumbers)
+                // console.log(input)
+                // answerBox.textContent = keyNumbers;
+                // console.log(answerBox)
+
+                input.push(keyInner)
                 console.log(input)
-                answerBox.textContent = keyNumbers;
-                console.log(answerBox)
         }
 
     } )
