@@ -20,26 +20,25 @@ for (i=0; i<keys.length; i++) {
             } else {
                 // const keyNumbers = parseInt(keyInner)
                 // input.push(keyNumbers)
+                input.push(keyInner)
+                let inputJoined = input.join('')
+                console.log(inputJoined);
                 // console.log(input)
+                answerBox.textContent = keyInner;
                 // answerBox.textContent = keyNumbers;
                 // console.log(answerBox)
                 
-                const keyNumbers = parseInt(keyInner)
-                input.push(keyNumbers)
-                console.log(input)
-                answerBox.textContent = keyNumbers;
-                console.log(answerBox)
+                
             }
-
     } )
 }
 
 
-if (keyInner === "+" 
-    (keyInner === "-"
-    (keyInner === "/"
-    (keyInner === "x"
-    {
+// if (keyInner === "+" 
+//     (keyInner === "-"
+//     (keyInner === "/"
+//     (keyInner === "x"
+//     {
 
 
 
