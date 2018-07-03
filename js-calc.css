@@ -1,3 +1,6 @@
+.keys { 
+    cursor: pointer; }
+
 .table {
     background-color: rgb(77, 182, 77);
     max-width: 50%;
